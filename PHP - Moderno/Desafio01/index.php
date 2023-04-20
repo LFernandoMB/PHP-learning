@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/estilo.css">
-    <title>Curso Básico de PHP - Gustavo Guanabara</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio - 01</title>
 </head>
 <body>
-    <div>
-        <?php 
-            $valor = $_GET["a"];
-            echo "Valor enviado foi $valor, seu antecessor é " . --$valor . ", e seu sucessor é " . ++$valor;
-        ?>
-    </div>
+    <main>
+        <h1>Informe um número</h1>
+        <form action="server.php" method="get">
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num">
+            <input type="submit" value="Calcular">
+        </form>
+    </main>
 </body>
 </html>
