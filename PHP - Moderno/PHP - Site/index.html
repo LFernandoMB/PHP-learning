@@ -12,10 +12,10 @@
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+            <img src="assets/img//meta-image.png" alt="">
         </div>
         <div class="form">
-            <form action="enviar.php" method="get"">
+            <form action="enviar.php" method="get">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -30,7 +30,7 @@
 
                     <div class="input-box">
                         <label for="idade">Idade</label>
-                        <input id="idade" type="number" name="idade" placeholder="Digite seu sobrenome" required>
+                        <input id="idade" type="number" name="idade" placeholder="Digite sua idade" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -39,13 +39,15 @@
 
                     <div class="input-box">
                         <label for="telefone">Telefone</label>
-                        <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(xx) x xxxx-xxxx" required>
                     </div>
 
                 </div>
 
                 <div class="continue-button">
                     <button type="submit" value="Enviar">Enviar</button>
+
+                    <button type="submit" value="Enviar"><a href="buscar.php">Visualizar Registros</a></button>
                 </div>
             </form>
         </div>
